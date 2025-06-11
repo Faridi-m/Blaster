@@ -19,7 +19,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/blaster.git
+git clone https://github.com/Faridi-m/blaster.git
 cd blaster
 python3 -m venv venv
 source venv/bin/activate
