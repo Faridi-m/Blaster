@@ -12,13 +12,14 @@
 * Subdomain Enumeration (via [crt.sh](https://crt.sh))
 * Port Scanning + Banner Grabbing (common ports)
 * Clean, Colorful CLI Output (via `colorama`)
+* Output to report file via command line redirection
 
 ---
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/Faridi-m/blaster.git
+git clone https://github.com/yourusername/blaster.git
 cd blaster
 python3 -m venv venv
 source venv/bin/activate
@@ -62,6 +63,22 @@ python blaster.py example.com --dns --subdomains --ports -v
 
 ---
 
+### 📄 Saving Scan Results to a Report
+
+You can save all scan output to a file (a report) by appending `> [filename]` to your command.
+
+#### **Example:**
+
+```bash
+python blaster.py example.com --dns --whois --subdomains --ports -v > example_report.txt
+```
+
+✅ This will save the results into a file called `example_report.txt` in the current directory.
+
+> 💡 Tip: You can also use `>>` to **append** results to an existing report file.
+
+---
+
 ## 🔍 Output Example
 
 ```
@@ -93,4 +110,4 @@ This tool is intended for educational and authorized security testing purposes o
 
 ## ✨ Credits
 
-Build with ❤️ by Usman Faridi.
+Built with ❤️ by Usman Faridi.
